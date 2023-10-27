@@ -1,0 +1,16 @@
+form{
+    margin-left:25%;
+    margin-top:10%;
+    width:60%;
+    height: 40%;
+    padding:10px;
+    
+}
+
+.form-control{
+    width:100%;
+}
+
+.btn{
+    width:20%;
+}
