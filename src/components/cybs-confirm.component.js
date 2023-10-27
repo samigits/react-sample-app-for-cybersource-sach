@@ -1,8 +1,6 @@
 import React,{Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import axios from 'axios';
 import '../css/style.css';
-import cardStore from '../store/cybst.service';
 
 export default class CyberConfirm extends Component{
 
@@ -28,31 +26,6 @@ export default class CyberConfirm extends Component{
         this.onChangeDate=this.onChangeDate.bind(this);
 
 
-    }
-
-    componentDidMount(){
-        this.subscription=cardStore.getPdata().subscribe(pstore =>{
-            if(pstore){
-                this.setState({
-                    access_key:pstore.access_key,
-                    profile_id:pstore.profile_id,
-                    transaction_uuid:pstore.transaction_uuid,
-                    reference_number:pstore.reference_number,
-                    signed_date_time:pstore.signed_date_time,
-                    signature:pstore.signature,
-
-                    amount:pstore.amount,
-                    currency:pstore.currency
-                });
-
-            }
-        
-            
-        }
-       
-        )
-
-        
     }
 
 
