@@ -1,6 +1,8 @@
 # Getting Started with Create React App
 
-## Available Scripts
+## About The App
+
+I built this sample react app to make developers understand the fields and steps to follow when you integrate cybersource payment gateway. Keep in mind that it uses cybersource secure acceptace hosted checkout and It is only the frontend part. To make this app fully functional, don't forget to clone a nodeJs backend repositry [here](https://github.com/samigits/secure-acceptance-hosed-checkout-backend-nodejs).
 
 In the project directory, you can run:
 
